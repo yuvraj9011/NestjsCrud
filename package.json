@@ -6,6 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "start:multi": "set MULTI_MODE=true && start \"Nest Start\" /B nest start --watch && start \"Load Balancer\" /B node loadbalancer.ts",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -26,7 +27,13 @@
     "@nestjs/platform-express": "^10.0.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.1",
+    "cluster": "^0.7.7",
+    "http": "^0.0.1-security",
+    "http-proxy": "^1.18.1",
+    "http-proxy-middleware": "^2.0.6",
+    "os": "^0.1.2",
     "reflect-metadata": "^0.2.0",
+    "round-robin": "^1.0.0",
     "rxjs": "^7.8.1",
     "uuid": "^9.0.1"
   },

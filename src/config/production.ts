@@ -1,5 +1,4 @@
-// config/production.ts
 export default {
   environment: 'production',
-  port:process.env.PORT || 3001
+  port:process.env.PORT || 4000
 };
